@@ -2,9 +2,9 @@ PiDataRecorder
 ==============
 
 Continuous measurement/display of temp/humidity
+Requires flot <http://www.flotcharts.org/> for web graph display
 
 Create an sqlite3 database "recorder.db" and setup a table like:
-
 create table data(temp INTEGER, relhum INTEGER, abshum INTEGER, stamp DATETIME default CURRENT_TIMESTAMP);
 
 When PiDataRecorder is ran, it will collect temperature, percent humidity, and timestamp.  Script will then
